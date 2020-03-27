@@ -11,7 +11,7 @@ export default function Logon() {
     const history = useHistory();
     const [id, setId] = useState('');
     
-    async function handleLogin(e){
+    function handleLogin(e){
         e.preventDefault();
 
         try{
