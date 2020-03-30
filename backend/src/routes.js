@@ -3,15 +3,11 @@ const { celebrate, Segments, Joi } = require('celebrate');
 const OngController = require('./controllers/OngController');
 const IncidentController = require('./controllers/IncidentController');
 const ProfileController = require('./controllers/ProfileController');
-const SessionController = require('./controllers/SectionController');
+const SectionController = require('./controllers/SectionController');
 const routes = express.Router();
 
 routes
-  .post('/session', celebrate({
-    [Segments.PARAMS]: Joi.object().keys({
-      id: Joi.number().required()
-    })
-  }), SessionController.create)
+  .post('/session', SectionController.create)
 
   .get('/ongs', OngController.index)
   .post('/ongs', celebrate({

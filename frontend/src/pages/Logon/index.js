@@ -11,11 +11,11 @@ export default function Logon() {
     const history = useHistory();
     const [id, setId] = useState('');
     
-    function handleLogin(e){
+    async function handleLogin(e){
         e.preventDefault();
 
         try{
-            const response = await api.post('sessions', { id});
+            const response = await api.post('session', {id});
             localStorage.setItem('ongId', id);
             localStorage.setItem('ongName', response.data.name);
 
