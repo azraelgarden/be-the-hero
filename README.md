@@ -27,10 +27,10 @@ Utilizando a linha de comando:
 ### Baixando o projeto
 ```bash
 # Clone o repositório
-$ git clone https://github.com/AzraelGarden/omnistack-11/
+$ git clone https://github.com/AzraelGarden/be-the-hero/
 
 # Entre no repositório
-$ cd omnistack-11
+$ cd be-the-hero
 ```
 
 ### Iniciando o back-end
